@@ -11,6 +11,8 @@ controlPlane:
 metadata:
   name: lab # Cluster name
 networking:
+  machineNetwork:
+  - 192.168.22.0/24
   clusterNetwork:
     - cidr: 10.128.0.0/14
       hostPrefix: 23
